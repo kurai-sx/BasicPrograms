@@ -1,0 +1,355 @@
+Let's start the journey to learn Python !
+In the '#' are the questions and in ''' ''' are the codes.
+
+
+#Square root
+
+'''import math
+a = int(input("Enter 1st number : "))
+z = math.sqrt(a)
+print(z)'''
+
+
+
+'''list1 = []
+def func1(lol):
+    
+    total = 0
+
+    for i in lol:
+        total = total + 1
+        print(total)
+    for j in range(5):
+        a = int(input("Enter your number : "))
+        list1.append(a)
+        
+func1(list1)
+print(list1)'''
+
+#Print table of given number
+'''a = int(input("Enter your number : "))
+
+for i in range(1,11):
+    print(a ,"x" , i , "=" , i * a)'''
+
+#max of 2 numbers
+
+'''a = int(input("Enter your nunber : "))
+b = int(input("Enter your nunber : "))
+if a > b :
+    print(" A is greater than B")
+else:
+    print("B is greater than A")'''
+
+
+#max of 3 numbers
+
+'''def num(a,b,c):
+
+    print(max(a,b,c))
+
+num(a = int(input("Enter your 1st number : ")),
+    b = int(input("Enter your 2nd number : ")),
+    c = int(input("Enter your 3rd number : ")))'''
+
+#sum of list numbers
+
+'''list1 = [1,2,3,4,5,6,7,8,9]
+print(sum(list1))'''
+#         Or
+'''list1 = [1,2,3,4,5,6,7,8,9]
+t = 0
+for i in range(10):
+    t = t + i
+
+print(t)'''
+
+# adding numbers to list
+
+'''list1 = []
+
+def num(a):
+   
+    for i in range(1,5):
+
+        a = int(input("Enter your numbers : "))
+        
+        list1.append(a)
+   
+num(list1)
+print(list1)'''
+
+#Program to insert a number to any position in a list
+
+
+'''
+list1 = [1,2,3,5,6,7,8]
+list1.insert(3,4)
+print(list1)'''
+
+# Factorial of a number
+
+'''a = int(input("Enter your number : "))
+fac = 1
+for i in range(1, a+1):
+    fac = fac * i
+print(fac)'''
+
+#  Permutation of Given number
+
+'''a = int(input("Enter your number : "))
+fac = 1
+fac1 = 1
+def num():
+    fac = 1
+    fac1 = 1
+    for i in range(1, a+1):
+        fac = fac * i
+    print(fac)
+    for j in range(1,a):
+        fac1 = fac1 * j
+    print(fac1)
+    print("Permutation of given number is : ", int(fac/fac1))
+num()'''
+
+
+       
+# Combinations of Given number
+
+'''a = int(input("Enter your number : "))
+r = int(input("Enter your number : "))
+
+def num():
+    if 0 <= r and r <= a:
+
+        fac = 1
+        fac1 = 1
+        fac2 = 1
+        for i in range(1,a+1):
+            fac = fac * i
+        print(fac)
+
+        for j in range(1, r+1):
+            fac1 = fac1 * j
+        print(fac1)
+
+        for k in range(2):
+            fac2 = (a-r) * k
+        print(fac2)
+
+        print("Combinations of the given numbers are : ", int(fac/(fac1 * fac2)))
+    else:
+        print("Invalid Syntax")
+num()'''
+
+
+# Simple calculator for user defined values
+
+'''
+def cal():
+    a = int(input("Enter your 1st number : "))
+    c = input("Tell me what to perform : ")
+    b = int(input("Enter your 2nd number : "))
+    if c == '+':
+        print(a+b)
+    elif c == '-':
+        print(a-b)
+    elif c == '*':
+        print(a*b)
+    elif c == '/':
+        print(int(a/b))
+    else:
+        print("Invalid Syntax !")
+cal()'''
+
+#  Area of triangle
+'''
+base = int(input("Enter base value : "))
+height = int(input("Enter height value : "))
+a = 1/2 * base * height
+print("Area of Tirangle : ",int(a))
+'''
+               #or
+
+'''a = int(input("1st Side : "))
+b = int(input("2nd Side : "))
+c = int(input("3rd Side : "))
+
+s = int((a+b+c)/2)
+x = (s*(s - a)*(s - b)*(s - c))**1/2
+print(int(x))'''
+
+# Solve Quadratic Equation 4x^2 - 19x - 5 = 0
+
+'''x = int(input("Enter number : "))
+a = 4 * x ** 2 - 19 * x - 5 
+print(a)'''
+
+# Mean of given list
+
+
+'''list1 = [1,2,3,4,5,6,7]
+a = 0
+for i in range(1,8):
+   
+    a = a + i
+print("Addition of given list is : ",a)
+
+x = len(list1)
+
+print("Mean of given list is : " ,int(a/x))'''
+
+
+
+# Median of given number
+
+'''from statistics import median
+list1 = [1,2,3,4,5,6,7,8]
+print(median(list1))'''
+
+# Mode of given number
+'''
+from statistics import mode
+
+
+list1 = [1,2,3,4,4,4,5,5,5,5,6,7]
+print(mode(list1))'''
+
+
+# Delete an element from list by index
+
+'''
+list1 = [1,2,3,4,5]
+list1.remove(1)
+print(list1)
+
+'''
+
+# Degree to Kelvin
+
+
+'''a = float(input("Enter your value to convert Temperature to Kelvin : "))
+def temp():
+    
+    T = a * 273.15
+    print(T,"K")
+
+temp()'''
+
+# Kelvin to Degree
+
+'''def temp():
+
+    T = a / 273.15
+    print(int(T),"Degree")
+
+temp()'''
+
+
+# Program to find all numbers that are divisible by 7 but are not a multiple of 5 between 2000 to 3000
+
+'''list1 = []
+for i in range(2000,3201):
+    if i % 7 == 0  and  i % 5 != 0:
+        
+        list1.append(i)
+print(list1,i)
+'''
+
+# Counting Upper and Lower case alphabets in a sentence
+
+
+'''def me(a):
+    
+    upper = 0
+    lower = 0
+    
+    for i in  a:
+        if i.isupper():
+            upper += 1
+        elif i.islower():
+            lower +=1
+        else:
+            pass
+    print("Upper : ", upper)
+    print("Lower : ",lower)
+me("I Love My India")'''
+
+
+#print fibonnachi number
+
+
+
+'''
+
+def num(n):
+    a = 0
+    b = 1
+    
+    
+    if n == 1 or n == 2:
+        print(b)
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
+   
+   
+num(9) '''
+
+
+#Find 15th position in python
+
+'''def num(n):
+    a = 0
+    b = 1
+    c = 0
+    
+    if n == 1 and n == 2:
+        print(b)
+
+    else:
+        for i in range(0,n-1):
+            c = a + b
+            a = b
+            b = c
+        
+        print(c)
+    
+num(15)
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
