@@ -323,6 +323,199 @@ num(9) '''
 num(15)
 '''
 
+#take random numbers as a input with a range of how many to take input numbers and print it into list with splitting it and print it's tuple and list of sorted list form.
+
+'''sum = int(input("Enter your range number : "))
+
+list1 = []
+for i in range(0,sum):
+    num1 = input("Enter your number : ")
+    
+    list1.append(num1)
+
+
+list1.sort()
+print("List : ",list(list1))
+print("Tuple : ", tuple(list1))'''
+    
+#printing extention of input file
+
+'''import os
+
+i = os.path.splitext(input("Enter your filename : "))
+print(i)
+filename = i[0]
+file_extention = i[1]
+print("File Name : ",filename)
+print("Extention Name : ",file_extention)'''
+
+#Display the examination schedule for 11 8 2022
+'''
+a = int(input("Date : "))
+b = int(input("Month : "))
+c = int(input("Year : "))
+
+dum = (a,b,c)
+print(dum)
+
+print("The Examination is scheduled on : " , a , "/" , b ," /" , c)
+
+'''
+
+#Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn
+
+'''a = int(input("Enter your number : "))
+
+n1 = int("%s"%(a))
+n2 = int("%s%s" %(a,a))
+n3 = int("%s%s%s" %(a,a,a))
+print(n1+n2+n3)
+'''
+
+# Write a Python program to print the calendar of a given month and year.
+
+'''import calendar
+m = int(input("Enter your month : "))
+y = int(input("Enter your year : "))
+print(calendar.month(y,m))
+
+'''
+
+#Write a Python program to calculate number of days between two dates.
+'''from datetime import date
+date1 = date(2022 , 8 , 12)
+date2 = date(2022 , 8 , 30)
+x = date2 - date1
+print(x)'''
+
+          # for user input
+'''from datetime import date
+a = int(input("Enter year : "))
+b = int(input("Enter month : "))
+c = int(input("Enter date : "))
+x = int(input("Enter year : "))
+y = int(input("Enter month : "))
+z = int(input("Enter date : "))
+
+date1 = date(a,b,c)
+date2 = date(x,y,z)
+print(date1)
+print(date2)
+x = date2 - date1
+print(x)'''
+          # for only in single month 
+''' import calendar
+date1 = (2022 , 8 , 12)
+date2 = (2022 , 8 , 30)
+x = (date2[2] - date1[2])
+print(x)'''
+
+#Write a Python program to get the volume of a sphere with radius 6.
+
+'''r = 6
+pi = 3.14
+volume = 4/3 * pi * r**3
+print(volume)'''
+
+#Write a Python program to get the difference between a given number and 17, 
+#if the number is greater than 17 return double the absolute difference
+
+'''b = 17
+a = int(input("Enter : "))
+def num1():
+    for i in range(0,1):
+        c = abs(a - b)
+    if c >= 17:
+        print(c+c)
+    elif c < 17:
+        print(c)
+num1()'''
+
+#Python program to print all positive numbers in a range
+
+'''def func():
+    a = int(input("Enter your numbers : "))
+    list1 = []
+    list2 = []
+    for i in range(0,a):
+        num1 = int(input("Enter your numbers : "))
+        if num1 >= 0:
+            list1.append(num1)
+        elif num1 < 0:
+            list2.append(num1)
+    
+    list1.sort()
+    print(list1)
+    list2.sort()
+    print(list2)
+    
+func()'''
+
+#Write a Python program to test whether a number is within 100 of 1000 or 2000
+
+'''a = int(input("Enter your number : "))
+for i in range(100,2001):
+    
+    if (a > 100) and (a <= 2000):
+        print(a,"is in Range")
+    elif (a > 2000) or (a <= 100):
+        print(a,"is out of the Range")
+'''
+
+#Write a Python program to count the number 4 in a given list
+
+'''list1 = [2,3,4,5,6,4,6,3,2,4]
+x = list1.count(4)
+print(x)'''
+
+
+#Write a Python program to test whether a passed letter is a vowel or not
+
+
+'''vowels = ['a','d','e','t','i','o','w','u']
+
+def vow(vowels):
+    if vowels==['a','e','i','o','u']:
+        return True
+    
+    return False
+   
+
+v1 = filter(vow,vowels)
+v2 = tuple(v1)
+print(v2)'''
+
+#Write a Python program to check whether a specified value is contained in a group of values
+'''a = int(input("Enter : "))
+list1 = [1,3,5,7]
+
+if a in list1:
+    print("It's there")
+else:
+    print("It's not in list1")'''
+ 
+#Write a Python program to create a histogram from a given list of integers
+
+'''import matplotlib.pyplot as plt
+list1 = [1,2,3,4,5,6,7,8,9]
+list2 = [1,2,3,4,5,6,7,8,9]
+plt.hist(list1,list2)
+plt.show()'''
+
+#Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2
+
+'''color_list_1=set(["White","Black","Red"])
+color_list_2=set(["Red","Green"])
+print(color_list_1)
+print(color_list_2)
+print("Different of color_list_1 and color_list_2")
+a = (list(color_list_1.difference(color_list_2)))
+b = (list(color_list_2.difference(color_list_1)))
+list1 = []
+list1.append(a)
+list1.append(b)
+print(list1)'''
+
 
 
 
